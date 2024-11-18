@@ -4,4 +4,5 @@
 - [ ] Testar diferentes configurações da claúsula *schedule*.
 - [ ] Rodar o programa no computador dedicado.
 - [ ] Criar novas entradas de 10 a 10^9 elementos.
-- [ ] Criar relatórios baseado em execuções no computador dedicado, com logs por tupla (claúsula schedule, tamanho de entrada).
+- [ ] Criar relatórios baseado em execuções no computador dedicado, com logs por tupla (claúsula *schedule*, tamanho de entrada).
+- [ ] Criar gráficos a respeitos dos logs e slides a respeito dos gráficos
