@@ -4,3 +4,7 @@ all:
 
 run:
 	./shellsort
+
+clean:
+	rm -f *.o
+	rm -f shellsort
