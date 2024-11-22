@@ -12,6 +12,25 @@
 #--------------------------------
 # exemplo: (altere a partir daqui)
 
-{ time ./shellsort shellsort_10na1.in ; } 2> results_10na1.txt
+#!/bin/bash
+
+#!/bin/bash
+
+# Verifica se o nome do arquivo de entrada foi passado como argumento
+if [ -z "$1" ]; then
+    echo "Uso: $0 <arquivo_entrada>"
+    exit 1
+fi
+
+# Captura o nome do arquivo de entrada e substitui .in por .out
+input_file="$1"
+output_file="${input_file%.in}.out"
+
+# Executa o comando `time` e salva os resultados no arquivo de saída
+{ time ./shellsort "$input_file"; } 2> "$output_file"
+
+# Mostra mensagem de confirmação
+echo "Resultados salvos em $output_file"
+
 
 # Fim do script
