@@ -12,6 +12,6 @@
 #--------------------------------
 # exemplo: (altere a partir daqui)
 
-time ./shellsort $1
+{ time ./shellsort shellsort_10na1.in ; } 2> results_10na1.txt
 
 # Fim do script

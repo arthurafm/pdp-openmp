@@ -11,7 +11,7 @@ short AbreArquivo(FILE **arq, const char *nome_arq, const char *modo) {
 }
 
 int main() {
-    for (int i = 1; i <= 9; i++) {
+    for (int i = 1; i < 9; i++) {
         char file_name[50];
         sprintf(file_name, "shellsort_10na%d.in", i);
         

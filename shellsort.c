@@ -44,7 +44,7 @@ void shell_sort_pass(char *a, int length, long int size, int interval) {
 	
 	/* Leitura do vetor e separação de intervalos */
 	/* A eficiência máxima pode ser atingida através de executar o máximo de elementos que não estão no mesmo intervalo ao mesmo tempo */
-	#pragma omp parallel for schedule(static, interval)
+	#pragma omp parallel for schedule(auto)
 	for (i = 0; i < size; i++) {
 		/* Insert a[i] into the sorted sublist */
 		int j;
